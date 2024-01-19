@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Redirect Button</title>
+</head>
+<body>
+
+<!-- Create a button element with an onclick event that triggers the redirection function -->
+<button onclick="redirect()">Go to Website</button>
+
+<script>
+  // JavaScript function to redirect to a random website from the list
+  function redirect() {
+    // Array of 15 websites
+    var websites = [
+      'https://www.youtube.com/watch?v=_S7WEVLbQ-Y&ab_channel=FicLord',
+      'https://popcat.click/',
+      'https://potatoortomato.com/',
+      'https://corndogoncorndog.com/',
+      'https://strobe.cool/',
+      'https://crouton.net/',
+      'http://chillestmonkey.com/',
+      'https://unicodesnowmanforyou.com/',
+      'https://boringboringboring.com/',
+      'https://existentialcrisis.com/',
+      'https://thisisnotajumpscare.com/',
+      'https://pixelsfighting.com/',
+      'http://www.patience-is-a-virtue.org/',
+      'https://www.blankwindows.com/',
+      'http://onemillionlols.com/'
+    ];
+
+    // Get a random index from the array
+    var randomIndex = Math.floor(Math.random() * websites.length);
+
+    // Redirect to the selected website
+    window.location.href = websites[randomIndex];
+  }
+</script>
+
+</body>
+</html>
